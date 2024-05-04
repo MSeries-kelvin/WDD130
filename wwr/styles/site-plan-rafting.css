@@ -15,7 +15,7 @@ body {
     --paragraph-font: Roboto, sans-serif;
     --nav-background-color: #E6E8E6;
     --nav-link-color: #3DA35D;
-    --nav-link-hover-color: #E6E8E6;
+    --nav-hover-link-color: #E6E8E6;
     --nav-hover-background-color: #172d4b;
 }
 
@@ -51,6 +51,6 @@ nav a:link, nav a:visited {
 }
 
 nav a:hover {
-    color: var(--nav-link-hover-color);
+    color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
