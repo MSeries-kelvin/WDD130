@@ -28,6 +28,10 @@ header nav a, footer nav a {
     text-decoration: none;
 }
 
+footer nav a img {
+    width: 30px;
+}
+
 .hero {
     position: relative;
     clear: both;
