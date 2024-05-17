@@ -3,7 +3,7 @@
 body {
     font-family: var(--paragraph-font);
     max-width: 95vw;
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 :root {
@@ -28,8 +28,41 @@ header nav a, footer nav a {
     text-decoration: none;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 120px;
+}
+
+header nav {
+    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    gap: 1px;;
+}
+
+header nav a {
+    padding: 10px 30px;
+    border: 1px solid var(--accent2-color);
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+header nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
 footer nav a img {
-    width: 30px;
+    width: 25px;
 }
 
 .hero {
@@ -71,4 +104,74 @@ footer nav a img {
 
 section {
     clear: both;
+}
+
+.history {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+}
+
+.history p:nth-child(1) {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.history p:nth-child(2) {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.history p {
+    padding: 10px;
+}
+
+.history img {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.history h2 {
+    grid-area: 1 / 1 / 2 / end;
+    text-align: center;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    max-width: 100vw;
+}
+
+.adventure h2 {
+    grid-area: 1 / 1 / 2 / end;
+    text-align: center;
+}
+
+.adventure figure {
+    grid-column: span 1;
+}
+
+.adventure figure img {
+    width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 0 20px;
+}
+
+footer p {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    gap: 20px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
