@@ -392,11 +392,11 @@ button:hover {
     background-position: center;
     padding: 20px;
     height: 320px;
-    color: var(--accent2-color);
+    color: #fff;
 }
 
 .cta h1, .cta h2 {
-    color: var(--accent2-color)
+    color: #fff;
 }
 
 .cta > div h2 {
@@ -421,7 +421,7 @@ button:hover {
     text-align: center;
     margin-top: 20px;
     width: fit-content;
-    color: var(--accent2-color);
+    color: #fff;
     font-size: 18px;
 }
 
@@ -439,8 +439,6 @@ button:hover {
 
 .trips > ul > li {
     width: 30%;
-    background-color: #172815;
-    /* padding: 20px; */
     background-color: #eee;
     border-radius: 5px;
     cursor: pointer;
@@ -510,3 +508,113 @@ table caption {
 }
 
 /* ---------------------- homepage css ------------------- */
+
+.home-page section:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/adventure3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    height: 320px;
+    color: var(--accent2-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page section:nth-child(1) h1 {
+    color: #fff;
+}
+
+.home-page section:nth-child(2) {
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.home-page section:nth-child(2) form {
+    padding: inherit;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.home-page section:nth-child(2) form input {
+    margin: 10px 0;
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #333;
+    border-radius: inherit;
+}
+
+.home-page section:nth-child(2) form button {
+    margin-top: 20px;
+    width: 80%;
+    margin: 20px 10% 0;
+    cursor: pointer;
+}
+
+
+.home-page section:nth-child(3) {
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/adventure2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-page section:nth-child(3) h2 {
+    color: #fff;
+}
+
+.home-page section:nth-child(3) a {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 13px 40px;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    width: fit-content;
+    color: #fff;
+    font-size: 18px;
+}
+
+.home-page section:nth-child(4) {
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px 0;
+}
+
+.home-page section:nth-child(4) > div {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-page section:nth-child(4) h2 {
+    margin: 0 ;
+}
+
+.home-page section:nth-child(4) article {
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #333;
+}
+
+.home-page section:nth-child(4) article div {
+    padding: 20px;
+}
+
+.home-page section:nth-child(4) article img {
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
