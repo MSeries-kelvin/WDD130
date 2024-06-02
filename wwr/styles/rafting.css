@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    font-family: var(--paragraph-font);
-    max-width: 95vw;
+    /* font-family: var(--paragraph-font); */
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    /* max-width: 95vw; */
     padding: 0px 20px;
 }
 
@@ -26,8 +27,15 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
+    /* font-family: var(--heading-font); */
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
     color: var(--primary-color);
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
 }
 
 header nav a, footer nav a {
@@ -39,19 +47,21 @@ header {
     grid-template-columns: 200px 1fr;
     align-items: center;
     gap: 20px;
-    padding: 20px;
-    background-color: var(--primary-color);
+    padding: 10px;
+    /* background-color: var(--primary-color); */
+    /* margin-bottom: 20px; */
 }
 
 header img {
     width: 120px;
+    border-radius: 3px;
 }
 
 header nav {
     justify-self: flex-end;
     display: flex;
     justify-content: center;
-    gap: 1px;;
+    gap: 10px;
 }
 
 header nav a {
@@ -60,6 +70,8 @@ header nav a {
     background-color: var(--accent2-color);
     color: var(--primary-color);
     transition: .3s;
+    border-radius: 3px;
+    font-weight: 600;
 }
 
 header nav a:hover {
@@ -72,7 +84,7 @@ footer nav a img {
 }
 
 footer a {
-    color: var(--accent2-color);
+    color: #333;
 }
 
 .hero {
@@ -90,8 +102,8 @@ footer a {
     position: absolute;
     top: 10px;
     text-align: center;
-    width: calc(100% - 20px);
-    background-color: #ffffff80;
+    width: 100%;
+    background-color: #ffffff9c;
     padding: 10px;
 }
 
@@ -103,13 +115,16 @@ footer a {
     background-color: #1f487e85;
     padding: 20px;
     color: var(--accent2-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .hero article img {
-    float: right;
     width: 15%;
     height: auto;
     margin-left: 20px;
+    order: 1;
 }
 
 section {
@@ -149,7 +164,12 @@ section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto;
-    max-width: 100vw;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .adventure h2 {
@@ -169,8 +189,9 @@ footer {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     padding: 20px;
+    border-top: 1px solid #333333a9;
 }
 
 footer p {
@@ -189,16 +210,19 @@ footer nav {
 /* ---------------------- contact us css ------------------- */
 
 .contact-page {
-    background-color: #eee;
+    /* background-color: #eee; */
     position: static;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.contact-page h1 {
-    text-align: center;
-    padding: 20px;
+.contact-page:nth-child(1) {
+    margin-top: 0;
 }
+
+/* .contact-page h1 {
+    
+} */
 
 .info {
     display: grid;
@@ -249,6 +273,13 @@ footer nav {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+    border: 2px solid #333333a9;
+    border-radius: 3px;
+}
+
+figcaption {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 h2 {
@@ -261,14 +292,16 @@ h3 {
 
 .contact-page:nth-child(2){
     padding: 20px;
+    border-top: 1px solid #333333a9;
 }
 
 .contact-page form {
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, .3);
-    width: 650px;
+    width: 580px;
     margin: 0 auto;
     border-radius: 10px;
+    background-color: #eee;
 }
 
 fieldset {
@@ -348,3 +381,132 @@ button {
 button:hover {
     background-color: var(--secondary-color);
 }
+
+
+/* ---------------------- trips css ------------------- */
+
+.cta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/adventure3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    height: 320px;
+    color: var(--accent2-color);
+}
+
+.cta h1, .cta h2 {
+    color: var(--accent2-color)
+}
+
+.cta > div h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cta > div p {
+    text-align: center;
+    width: 650px;
+    margin: 0 auto;
+}
+
+.cta > div a {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 13px 40px;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    width: fit-content;
+    color: var(--accent2-color);
+    font-size: 18px;
+}
+
+.trips {
+    padding: 20px;
+}
+
+.trips > ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.trips > ul > li {
+    width: 30%;
+    background-color: #172815;
+    /* padding: 20px; */
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trips > ul > li > img {
+    width: 100%;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.trips > ul > li > div {
+    padding: 20px;
+    /* transform: translateY(-200px); */
+}
+
+.second-list {
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    line-height: 25px;
+}
+
+.first-list {
+    list-style-type: none;
+    margin: 20px 0 20px 0;
+}
+
+.first-list span {
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.trips > ul > li h3 {
+    text-align: center;
+}
+
+.trips > ul > li p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+
+}
+
+table, th, td{
+    border: 1px solid #333;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+th, tr:nth-of-type(odd) {
+    background-color: #eee;
+}
+
+table th, table td {
+    padding: 10px;
+}
+
+table caption {
+    font-size: 24px ;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* ---------------------- homepage css ------------------- */
